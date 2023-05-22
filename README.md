@@ -5,9 +5,9 @@ Curriculum Learning for Graph Neural Networks: A Multiview Competence-based Appr
 
 # To run the code 
 
-# Node Classification
+## Node Classification
 
-# Link Prediction
+## Link Prediction
 
 # Citation
 
