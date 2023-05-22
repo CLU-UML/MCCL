@@ -3,6 +3,7 @@ Curriculum Learning for Graph Neural Networks: A Multiview Competence-based Appr
 
 # Data 
 
+
 # To run the code 
 
 ## Node Classification
