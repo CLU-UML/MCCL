@@ -2,7 +2,7 @@
 Curriculum Learning for Graph Neural Networks: A Multiview Competence-based Approach
 MCCL is a new perspective on curriculum learning by introducing a novel approach that builds on graph complexity formalisms (as difficulty criteria) and model competence during training. The model consists of a scheduling scheme which derives effective curricula by accounting for different views of sample difficulty and model competence during training. It effectively leverages complexity formalisms of graph data, taking into account multiview difficulty of training data samples and model's learning progress.
 <p align="center">
-<img src="https://github.com/MCCL/mccl.png" width="900" height="600">
+<img src="https://github.com/CLU-UML/MCCL/blob/main/mccl.png" width="800" height="450">
 </p>
 
 # Data 
