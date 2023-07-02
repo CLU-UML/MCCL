@@ -2,7 +2,7 @@
 Curriculum Learning for Graph Neural Networks: A Multiview Competence-based Approach
 
 # Data 
-## Link Prediction
+### Link Prediction
 There are two datasets for link prediction: PGR and GDPR. 
 
 * **Phenotype Gene Relation (PGR):**  PGR is created by Sousa et al., NAACL 2019 (https://aclanthology.org/N19-1152/) from PubMed articles and contains sentences describing relations between given genes and phenotypes. In our experiments, we only include data samples in PGR with available text descriptions for their genes and phenotypes. This amounts to ~71% of the original dataset. 
@@ -14,7 +14,7 @@ To download datasets with embeddings and Train/Test/Val splits, go to data direc
 ```
 sh ./download.sh
 ```
-## Node Classification
+### Node Classification
 There are two datasets for node classification: Arxiv and Cora. 
 
 * **Arxiv:** Arxiv is downloaded from ogbn (https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv) using following code:
@@ -36,11 +36,11 @@ dataset = Planetoid(root='/tmp/Cora', name='Cora')
 ```
 # To run the code 
 Use the following command with appropriate arguments:
-## Node Classification
+### Node Classification
 ```
 python node_classification/node_prediction_CMCL.py
 ```
-## Link Prediction
+### Link Prediction
 ```
 python edge_prediction/main.py
 ```
