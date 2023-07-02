@@ -15,7 +15,25 @@ To download datasets with embeddings and Train/Test/Val splits, go to data direc
 sh ./download.sh
 ```
 ## Node Classification
+There are two datasets for node classification: Arxiv and Cora. 
 
+* **Arxiv:** can be downloaded from ogbn (https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv) using following code:
+
+```
+from ogb.nodeproppred import PygNodePropPredDataset
+
+dataset = PygNodePropPredDataset(name = d_name) 
+
+split_idx = dataset.get_idx_split()
+train_idx, valid_idx, test_idx = split_idx["train"], split_idx["valid"], split_idx["test"]
+graph = dataset[0] # pyg graph object
+
+```
+* **Cora:** can be downloaded from Pytorch Geometric library (https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html#torch_geometric.datasets.Planetoid). We used following code:
+
+```
+dataset = Planetoid(root='/tmp/Cora', name='Cora')
+```
 # To run the code 
 
 ## Node Classification
