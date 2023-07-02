@@ -35,11 +35,15 @@ graph = dataset[0] # pyg graph object
 dataset = Planetoid(root='/tmp/Cora', name='Cora')
 ```
 # To run the code 
-
+Use the following command with appropriate arguments:
 ## Node Classification
-
+```
+python node_classification/node_prediction_CMCL.py
+```
 ## Link Prediction
-
+```
+python edge_prediction/main.py
+```
 # Citation
 
 ```
