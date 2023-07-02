@@ -17,7 +17,7 @@ sh ./download.sh
 ## Node Classification
 There are two datasets for node classification: Arxiv and Cora. 
 
-* **Arxiv:** can be downloaded from ogbn (https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv) using following code:
+* **Arxiv:** Arxiv is downloaded from ogbn (https://ogb.stanford.edu/docs/nodeprop/#ogbn-arxiv) using following code:
 
 ```
 from ogb.nodeproppred import PygNodePropPredDataset
@@ -29,7 +29,7 @@ train_idx, valid_idx, test_idx = split_idx["train"], split_idx["valid"], split_i
 graph = dataset[0] # pyg graph object
 
 ```
-* **Cora:** can be downloaded from Pytorch Geometric library (https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html#torch_geometric.datasets.Planetoid). We used following code:
+* **Cora:** Cora is downloaded from Pytorch Geometric library (https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html#torch_geometric.datasets.Planetoid). We used following code:
 
 ```
 dataset = Planetoid(root='/tmp/Cora', name='Cora')
