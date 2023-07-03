@@ -8,7 +8,7 @@ Multiview Competence-based Curriculum Learning (MCCL), is a new perspective on c
 The difficulty of training examples--target node pairs in red--can be assessed based on their subgraphs, k-hop neighbors of target nodes. For brevity, we show two views: node degree and closeness centrality. Boldfaced tokens indicate nodes in the graph, Label indicates if the sentence reports a causal relation between the nodes, and Degree and Centrality report the sum of degree and closeness centrality scores of the target nodes in their subgraphs. Each subgraph provides a structural view of the target nodes in sentences. The relative difficulty of examples is different across views, e.g., G2 is less difficult than G3 according to Degree but more difficult according to Centrality.
 
 
-<br>For node classification, input to the model is the graph with text features and the output is the multiclass label. For link prediction, input to the model is a graph with text features generated from textual summaries and the output is a binary label (+1/-1). <br />
+<br>For node classification, input to the model is the graph with text features and pre-calculated graph complexity indices (example, average degree, number of nodes, etc.), and the output is the multiclass label. For link prediction, input to the model is a graph with text features generated from textual summaries and pre-calculated graph complexity indices (example, average degree, number of nodes, etc.), and the output is a binary label (+1/-1). <br />
 
 # Data 
 
